@@ -85,6 +85,15 @@ table{
 width:100%;
 border-collapse:collapse;}
 
+table {
+counter-reset: rowNumber;}
+
+tr:not(:first-child) {
+counter-increment: rowNumber;}
+
+tr td:first-child::before {
+content: counter(rowNumber);}
+
 table, th, td{
 border:1px solid black;}
 
@@ -198,39 +207,46 @@ and
 
 <table>
 <tr>
+<th>No.</th>
 <th>Information</th>
 <th>Details</th>
 </tr>
 
 <tr>
+<td></td>
 <td>Full Name</td>
 <td>Shadatul Yasmin Binti Mohamed Shahren</td>
 </tr>
 
 <tr>
+<td></td>
 <td>Programme</td>
 <td>Diploma in Information Management</td>
 </tr>
 
 <tr>
+<td></td>
 <td>University</td>
 <td>Universiti Teknologi MARA (UiTM)</td>
 </tr>
 
 <tr>
+<td></td>
 <td>Current Position</td>
 <td>Head of Document Control</td>
 </tr>
 
 <tr>
+<td></td>
 <td>Experience</td>
 <td>8 Years</td>
 </tr>
 
 <tr>
+<td></td>
 <td>LinkedIn</td>
 <td>
-<a href="https://www.linkedin.com/in/shadatul-yasmin-mohamed-shahren-99a766195" target="_blank" style="color:#4245f5;">
+<a href="https://www.linkedin.com/in/shadatul-yasmin-mohamed-shahren-99a766195" target="_blank">
 <b>Visit Profile</b>
 </a>
 </td>
